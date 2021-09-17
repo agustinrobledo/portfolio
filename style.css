@@ -34,17 +34,34 @@ html, body {
       transform: translateY(-50%);
 }
 
+.line-two {
+      width: 24em;
+      top: 50%;
+      margin: auto;
+      border-right: 2px solid #0f0f0f;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+}
+
 .anim-typewriter {
       animation: typewriter 4s steps(40) 1s 1 normal both,
       blinkTextCussor 500ms steps(40) infinite normal;
 }
+
+.anim-twotypewriter {
+      animation: twotypewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCussor 500ms steps(40) infinite normal;
+}
+
 
 @keyframes typewriter {
       from {
             width: 0;
       }
       to {
-            width: 17em;
+            width: 19em;
       }
 }
 
@@ -54,10 +71,30 @@ html, body {
                   width: 0;
             }
             to {
-                  width: 17em;
+                  width: 18em;
             }
       }
 }
+@keyframes twotypewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
+}
+
+@media(max-width: 768px) {
+      @keyframes twotypewriter {
+            from {
+                  width: 0;
+            }
+            to {
+                  width: 16em;
+            }
+      }
+}
+
 
 @keyframes blinkTextCussor {
       from {
@@ -306,16 +343,16 @@ h6 {
 
 .project {
       height: 500px;
+      width: 100%;
 }
 
 .project1 {
-      background: url(./img/PI\ pic.png) ;
+      background: url(./img/PI-pic.png) ;
       background-size: cover;
 }
 
 .project1::after {
       content: "videogames.app";
-      
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -526,7 +563,14 @@ h6 {
 }
 
 .image {
-      background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
+      background: url(img/f719166b-1daa-4f9f-949c-605cbb3d1c3a.jpg) no-repeat 50% 70%;
+      background-size: cover;
+      background-position: 0%;
+}
+.image2{
+      background: url(img/perfil.jpeg) no-repeat 50% 70%;
+      background-size: cover;
+      background-position: 0%;
 }
 
 /*--------------- contact form --------------- */
