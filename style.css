@@ -65,6 +65,8 @@ html, body {
       }
 }
 
+
+
 @media(max-width: 768px) {
       @keyframes typewriter {
             from {
@@ -74,6 +76,7 @@ html, body {
                   width: 18em;
             }
       }
+
 }
 @keyframes twotypewriter {
       from {
@@ -291,7 +294,10 @@ nav #menu li a:hover {
 
 @media(max-width: 768px) {
       .header h1 {
-            font-size: 26px;
+            font-size: 19px;
+      }
+      .header h2{
+            font-size: 18px;
       }
 }
 
